@@ -16,74 +16,238 @@
       type="text/css"
       href="./dist/style.css"
     />
-    <title>Vite App</title>
+    <title>Mench</title>
+    <script
+      src="/main.js"
+      defer
+    ></script>
   </head>
   <body class="h-screen flex justify-center items-center overflow-auto">
-    <!-- main board -->
-    <div class="relative bg-orange-300 w-[650px] h-[650px] aspect-square">
-      <!-- Start of four edges -->
+    <audio
+      autoplay="false"
+      id="audio-white"
+    >
+      <source
+        type="audio/wav"
+        src="/voices/white.wav"
+      />
+    </audio>
+    <audio
+      autoplay="false"
+      id="audio-blue"
+    >
+      <source
+        type="audio/wav"
+        src="/voices/blue.wav"
+      />
+    </audio>
+    <audio
+      autoplay="false"
+      id="audio-green"
+    >
+      <source
+        type="audio/wav"
+        src="/voices/green.wav"
+      />
+    </audio>
+    <audio
+      autoplay="false"
+      id="audio-red"
+    >
+      <source
+        type="audio/wav"
+        src="/voices/red.wav"
+      />
+    </audio>
+    <audio
+      autoplay="false"
+      id="audio-yellow"
+    >
+      <source
+        type="audio/wav"
+        src="/voices/yellow.wav"
+      />
+    </audio>
 
+    <!-- main board -->
+    <div
+      class="relative bg-orange-300 w-[650px] h-[650px] aspect-square z-0 shadow-2xl"
+    >
+      <!-- ! Arrows -->
+      <div>
+        <svg
+          width="100px"
+          height="100px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute top-[170px] left-[38px] rotate-180"
+        >
+          <path
+            d="M1.02686 11.9928L5.2623 16.2426L6.67889 14.8308L4.85754 13.0032L22.9729 13.0011L22.9727 11.0011L4.85297 11.0032L6.68848 9.17392L5.27665 7.75732L1.02686 11.9928Z"
+            fill="#000000"
+          />
+        </svg>
+        <svg
+          width="100px"
+          height="100px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute top-[45px] right-[168px] rotate-[270deg]"
+        >
+          <path
+            d="M1.02686 11.9928L5.2623 16.2426L6.67889 14.8308L4.85754 13.0032L22.9729 13.0011L22.9727 11.0011L4.85297 11.0032L6.68848 9.17392L5.27665 7.75732L1.02686 11.9928Z"
+            fill="#000000"
+          />
+        </svg>
+        <svg
+          width="100px"
+          height="100px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute bottom-[170px] right-[38px]"
+        >
+          <path
+            d="M1.02686 11.9928L5.2623 16.2426L6.67889 14.8308L4.85754 13.0032L22.9729 13.0011L22.9727 11.0011L4.85297 11.0032L6.68848 9.17392L5.27665 7.75732L1.02686 11.9928Z"
+            fill="#000000"
+          />
+        </svg>
+        <svg
+          width="100px"
+          height="100px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute bottom-[45px] left-[168px] rotate-90"
+        >
+          <path
+            d="M1.02686 11.9928L5.2623 16.2426L6.67889 14.8308L4.85754 13.0032L22.9729 13.0011L22.9727 11.0011L4.85297 11.0032L6.68848 9.17392L5.27665 7.75732L1.02686 11.9928Z"
+            fill="#000000"
+          />
+        </svg>
+      </div>
+
+      <!-- ! lines between squares -->
+      <div>
+        <div
+          class="absolute p-[3px] bg-black w-[100px] left-[270px] top-[42px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black h-[250px] left-[266px] top-[42px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black h-[250px] left-[378px] top-[42px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black w-[230px] left-[50px] top-[267px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black w-[230px] left-[370px] top-[267px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black h-[100px] left-[42px] top-[267px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black h-[100px] left-[602px] top-[267px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black w-[230px] left-[50px] top-[377px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black w-[230px] left-[370px] top-[377px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black h-[250px] left-[266px] top-[375px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black h-[250px] left-[378px] top-[375px] -z-10"
+        ></div>
+        <div
+          class="absolute p-[3px] bg-black w-[100px] left-[270px] top-[604px] -z-10"
+        ></div>
+      </div>
+
+      <!-- Start of four edges -->
       <!--! top left -->
       <div class="absolute top-5 left-5 grid grid-cols-2 gap-2">
         <span
-          class="p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
+          onclick="function yo(e){console.log(e)}"
+          data-role="red"
+          class="first circle z-50 p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
+          data-role="red"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
+          data-role="red"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
+          data-role="red"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
         ></span>
       </div>
 
       <!--! top right -->
       <div class="absolute top-5 right-5 grid grid-cols-2 gap-2"
         ><span
-          class="p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
+          data-role="blue"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
+          data-role="blue"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
+          data-role="blue"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
+          data-role="blue"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
         ></span
       ></div>
 
       <!--! bottom left -->
       <div class="absolute bottom-5 left-5 grid grid-cols-2 gap-2"
         ><span
-          class="p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
+          data-role="yellow"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
+          data-role="yellow"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
+          data-role="yellow"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
+          data-role="yellow"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
         ></span
       ></div>
 
       <!--! bottom right -->
       <div class="absolute bottom-5 right-5 grid grid-cols-2 gap-2"
         ><span
-          class="p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
+          data-role="green"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
+          data-role="green"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
+          data-role="green"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
         ></span>
         <span
-          class="p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
+          data-role="green"
+          class="circle z-50 p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
         ></span
       ></div>
 
@@ -94,195 +258,247 @@
         <div class="flex gap-2 flex-col items-center justify-center">
           <div class="grid grid-cols-3 grid-rows-2 gap-2">
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
+              data-role="blue"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
+              data-role="blue"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
           </div>
           <div class="grid grid-cols-3 grid-rows-2 gap-2">
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
+              data-role="blue"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
+              data-role="blue"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
           </div>
           <!--! ceneter section -->
           <div class="grid grid-cols-11 grid-rows-3 gap-2">
             <!-- ! row 1 -->
             <span
-              class="p-5 border-4 border-black rounded-full bg-red-300 col-span-1"
+              data-role="red"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-red-300 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
+              data-role="blue"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-blue-700 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <!-- ! row 2 -->
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
+              data-role="red"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
+              data-role="red"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
+              data-role="red"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
+              data-role="red"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-red-500 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-transparent rounded-full bg-transparent col-span-1"
+              class="circle z-50 p-5 border-4 border-transparent rounded-full bg-transparent col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
+              data-role="green"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
+              data-role="green"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
+              data-role="green"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
+              data-role="green"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <!-- ! row 3 -->
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
+              data-role="yellow"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
+              data-role="green"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-green-500 col-span-1"
             ></span>
           </div>
           <!-- ! end of center section -->
           <div class="grid grid-cols-3 grid-rows-2 gap-2">
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
+              data-role="yellow"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
+              data-role="yellow"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span> </div
           ><div class="grid grid-cols-3 grid-rows-2 gap-2">
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
+              data-role="yellow"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
+              data-role="yellow"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-yellow-300 col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
             <span
-              class="p-5 border-4 border-black rounded-full bg-white col-span-1"
+              data-role="white"
+              class="circle z-50 p-5 border-4 border-black rounded-full bg-white col-span-1"
             ></span>
           </div>
         </div>
       </div>
     </div>
-    <script
-      type="module"
-      src="/main.js"
-    ></script>
   </body>
 </html>
