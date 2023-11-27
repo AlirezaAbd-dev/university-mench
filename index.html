@@ -2,11 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/vite.svg"
-    />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -14,13 +9,9 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./dist/style.css"
+      href="/dist/style.css"
     />
     <title>Mench</title>
-    <script
-      src="/main.js"
-      defer
-    ></script>
   </head>
   <body class="h-screen flex justify-center items-center overflow-auto">
     <audio
@@ -29,7 +20,7 @@
     >
       <source
         type="audio/wav"
-        src="/voices/white.wav"
+        src="../voices/white.wav"
       />
     </audio>
     <audio
@@ -38,7 +29,7 @@
     >
       <source
         type="audio/wav"
-        src="/voices/blue.wav"
+        src="../voices/blue.wav"
       />
     </audio>
     <audio
@@ -47,7 +38,7 @@
     >
       <source
         type="audio/wav"
-        src="/voices/green.wav"
+        src="../voices/green.wav"
       />
     </audio>
     <audio
@@ -56,7 +47,7 @@
     >
       <source
         type="audio/wav"
-        src="/voices/red.wav"
+        src="../voices/red.wav"
       />
     </audio>
     <audio
@@ -65,7 +56,7 @@
     >
       <source
         type="audio/wav"
-        src="/voices/yellow.wav"
+        src="../voices/yellow.wav"
       />
     </audio>
 
@@ -500,5 +491,9 @@
         </div>
       </div>
     </div>
+    <script
+      type="module"
+      src="/src/main.ts"
+    ></script>
   </body>
 </html>
